@@ -1,0 +1,41 @@
+.dados {
+    background-color: #f7f2ef;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px #000;
+
+    &__form {
+        padding-top: 30px;
+        padding-left: 10px;
+        &__nome {
+            padding: 15px 6px;
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
+        &__moedas {
+            margin-top: 40px;
+            display: flex;
+            &__item {
+                margin-right: 40px;
+            }
+        }
+
+        &__btn {
+            padding: 10px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: rgb(39, 111, 39);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.resultados {
+    background-color: #f7f2ef;
+    width: 500px;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 5px #000;
+
+    &__info {
+        p {
+            padding: 10px;
+            font-size: 22px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

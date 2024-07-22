@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__brand"><span>Aura</span> Banking</h1>
+        <input class="cabecalho__search" type="search" id="buscar" placeholder="Buscar">
+    </header>
+    <div class="marcador">
+        <marquee>Bem-vindo ao nosso Conversor de Moedas, a ferramenta perfeita para ajudar você a converter
+            valores entre Real, Dólar e Euro com apenas alguns cliques. Seja para planejar uma viagem, fazer compras
+            internacionais ou investir, nosso conversor oferece taxas de câmbio precisas e atualizadas em tempo real,
+            garantindo que você sempre tenha a melhor informação à sua disposição. Conversor De Moedas : Euro - Real -
+            Dólar</marquee>
+    </div>
+    <div class="hello hello--none">
+        Olá, <span id="adc-nome"></span> Como vai? Bem Vindo A Nosso Conversor De Moedas!
+    </div>
+    <div class="container">
+        <div class="dados">
+            <form class="dados__form" id="form">
+                <input type="text" placeholder="Nome" class="dados__form__nome" id="nome">
+                <p><strong>Escolha qual moeda você vai converter o real:</strong></p>
+                <div class="dados__form__moedas">
+                    <div class="dados__form__moedas__item">
+                        <input type="radio" name="radmoed" id="euro" checked> Euro
+                    </div>
+                    <div class="dados__form__moedas__item">
+                        <input type="radio" name="radmoed" id=""> Dólar
+                    </div>
+                </div>
+                <input class="dados__form__btn" type="submit" value="Converter" id="converter">
+            </form>
+        </div>
+        <div class="resultados">
+            <div class="resultados__info">
+                <p><strong>Conversão</strong>"Euro/Real Brasileiro"</p>
+                <p><strong>Valor:</strong> R$5,99</p>
+                <p><strong>Moeda:</strong> Euro</p>
+                <p><strong>Data:</strong> 19:00:00 16/09/2005</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

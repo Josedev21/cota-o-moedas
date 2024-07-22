@@ -1,0 +1,57 @@
+@use 'dados';
+@use 'resultados';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    padding: 20px 13px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    &__brand {
+        font-weight: 300;
+
+        span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    &__search {
+        margin-right: 50px;
+        width: 200px;
+        padding-left: 30px;
+        font-size: 18px;
+        border: none;
+        background-color: #f7f2ef;
+    }
+}
+
+.marcador {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hello {
+    margin: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 12px;
+
+    &--none {
+        display: none;
+    }
+}
