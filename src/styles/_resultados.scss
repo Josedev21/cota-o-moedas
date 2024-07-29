@@ -7,15 +7,48 @@
     align-items: center;
     justify-content: center;
     box-shadow: 10px 10px 5px #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5.0s ease-in-out, visibility 0s ease-in-out 5.0s;;
+
+    &--transicao {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 5.0s ease-in-out;
+    }
+
+    &--none {
+        display: none;
+    }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            list-style: none;
+        }
+
         p {
-            padding: 10px;
             font-size: 22px;
+            font-style: italic;
 
             span {
                 font-weight: bold;
             }
+        }
+
+        &__date {
+            margin-left: auto;
+            font-style: italic;
+        }
+
+        .bi-arrow-down {
+            color: red;
+        }
+
+        .bi-arrow-up {
+            color: green;
         }
     }
 }
